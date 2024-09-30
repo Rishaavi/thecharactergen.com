@@ -1,1 +1,61 @@
+class Character < ApplicationRecord
+  validates :species, :occupation, :abilities, :strength, :height, presence: true
 
+  enum species: { goblin: 0, human: 1, elf: 2, dwarf: 3, angel: 4, reaper: 5, demigod: 6, dragon: 7, titan: 8 }
+
+  def random_ability
+    abilities.sample
+  end
+end
+
+SPECIES = {
+  goblin: ["Miner", "Alchemist", "Axe-wielder", "Warrior", "Bowman", "Mage", "Brute", "Cannonsman"],
+  human: ["General", "Knight", "Assassin", "Farmer", "Gunner", "Emperor", "Mage", "Pirate", "Behemoth"],
+  # ... other species and their occupations
+}
+
+ABILITIES = {
+  goblin: {
+    miner: ["Ironskin", "Goldheart", "Diamondeyes"],
+    # ... other abilities for goblin occupations
+  },
+  # ... abilities for other species and occupations
+}
+
+STRENGTHS = ["Strength - Human", "Strength - Above Average", "Strength - Warrior", "Strength - Gorilla", "Strength - Champion", "Strength - Ethereal", "Strength - Transcendent", "Strength - Chuck Norris"]
+STRENGTH_WEIGHTS = [0.3, 0.25, 0.2, 0.1, 0.07, 0.04, 0.03, 0.01]
+
+HEIGHTS = {
+  goblin: ["4.5ft", "4ft", "5ft", "5.5ft"],
+  human: ["5.5ft", "6ft", "6'5ft", "6'9ft"],
+  # ... heights for other species
+}
+
+ENCHANTMENTS = ["Fire Aspect", "Power", "Ice Blood"]
+ENCHANTMENT_WEIGHTS = [0.33, 0.33, 0.34]
+
+def generate_random_number(min, max)
+  rand(min..max)
+end
+
+def generate_random_choice(choices, weights)
+  choices.sample(1, weights).first
+end
+
+def generate_character
+  species = Character.species.keys.sample
+  occupation = SPECIES[species].sample
+  abilities = ABILITIES[species][occupation].sample
+  strength = generate_random_choice(STRENGTHS, STRENGTH_WEIGHTS)
+  height = HEIGHTS[species].sample
+  enchantment = generate_random_choice(ENCHANTMENTS, ENCHANTMENT_WEIGHTS) if occupation == "Knight" || occupation == "Assassin"
+
+  Character.create!(
+    species: species,
+    occupation: occupation,
+    abilities: abilities,
+    strength: strength,
+    height: height,
+    enchantment: enchantment
+  )
+end
