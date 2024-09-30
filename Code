@@ -1,0 +1,353 @@
+  import random
+
+##randomness##)
+  randNum2 = random.randint(0, 7)
+  randNum3 = random.randint(0, 2)
+  randNum1 = random.randint(0, 8)
+
+##species##
+  species = ["Goblin", "Human", "Elf", "Dwarf", "Angel","Reaper", "Demigod", "Dragon", "Titan"]
+
+##occupations##
+  orcOrcupation = ["Miner", "Alchemist", "Axe-wielder", "Warrior", "Bowman", "Mage", "Brute", "Cannonsman"]
+  humanOccupation = ["General", "Knight", "Assassin", "Farmer", "Gunner", "Emperor", "Mage", "Pirate", "Behemoth"]
+  elfOccupation = ["King", "Lord", "Archer", "Swordsman", "Elemental", "Wizard", "Veteran", "Crossbow"]
+  dwarfOccupation = ["Hammerer", "Miner", "Sage", "Aage", "Axeman", "Barbarian", "Maceman", "Lord"]
+  angelOccupation = ["Divine", "Cupid", "Archer", "Sage", "Corrupted", "Swordsman", "Saint", "Protector"]
+  reaperOccupation = ["Lifetaker", "Scythesman", "Nightmare", "Hunter", "Archer", "Famine", "Grim", "Soulguider"]
+  demigodOccupation = ["Giant", "Cyclops", "Swordsman", "Archer", "Axe-Wielder", "Maceman", "Hunter", "Trident"]
+  dragonOccupation = ["Icebreather", "Firebreather", "Aquatic", "Skyworm", "Earthblood", "Solarin", "Lunarian", "Spaceroamer"]
+  titanOccupation = ["Colossus", "Armored", "Vicious", "Brute", "Divine", "Corrupt", "Club-Wielder", "Treasure Hoarder"]
+
+  ##orcabilities##
+  orcminer = ["Ironskin - Your skin is made of iron", "Goldheart - You can turn anything into gold at will", "Diamondeyes - You can see up to 1 mile"]
+  orcalchemist = ["Potent - You can use any potion imaginable", "Immortality - You drink an immortality potion", "Brewer - You can brew up potions anywhere"]
+  orcaxewielder = ["axe throw - you can throw your axe and it returns to you", "earthquake - striking the ground allows you to cause a small earthquake", "double-edge - your axe has two edges and twice the strength"]
+  orcwarrior = ["battle cry - you gain strength and speed after a battle cry", "mutliweapon - you can wield any weapon", "wolf - you have a pet wolf that you ride into battle"]
+  orcbowman = ["infinite ammo - you never run out of arrows", "arrow arsenal - you have elemental arrows", "dual wielder - you have a small sword"]
+  orcmage = ["swamp arcane - you can cast any spell related to the swamp", "fire arcane - you can cast any spell related to fire", "earth arcane - you can cast any spell related to Earth"]
+  orcbrute = ["giant - you are twice as tall as the normal goblin", "rage frenzy - you have double strength for a short period of time", "brute force - you have the triple strength, but half the speed of normal goblins"]
+  orccannonsman = ["atomic - you have a devastating cannon blast, but it takes twice as long to reload", "sniper - you are twice as accurate", "AK-47 - you have thrice the reload speed, but one fourth the strength of a regular cannon"]
+  ##humanabilities##
+  humangeneral = ["horserider - you have a mighty steed as your ride into battle", "armor - you are have armor", "battle IQ - you have a high battle IQ"]##armor
+  humanknight = ["chivalry - you are very charismatic", "multiweapon - you can wield any weapon", "enchantment - you gain an enchantment for your weapon"]##enchantment##
+  humanassassin = ["stealthy - you can become invisible", "backstabber - you can teleport behind your enemies", "knife-thrower - you can throw your knife"]
+  humanfarmer = ["wealthy - you have a lot of money", "strength - the work on the farm made you astonishlingly strong", "always full - you never become hungry or thirsty"]
+  humangunner = ["firespitter - your pistol shoots fire-bullets", "icebreather - your pistol shoots ice-bullets", "lightningstriker - your pistol shoots lightning bullets"]
+  humanemperor = ["goldheart - you can turn anything into gold at will", "empire - your subjects have an undying loyalty to you", "battle IQ - you have a high battle IQ"]
+  humanmage = ["steel arcane - you can move steel at will", "fire arcane - you can cast any spell related to fire", "lightning arcane - you can cast any spell related to lightning"]
+  humanpirate = ["enchantment - you gain an enchantment on your pistol", "savvy pirate - your ship can move twice as fast as regular ships", "heavy hitter - your ship moves half as fast as regular ships, but does twice as much damage"]
+  humanbehemoth = ("massive - you are twice as fast and twice as strong as regular humans", "axe throw - you can throw your axe and it returns to you", "goliath - you can have a javeline, a spear, or a sword as a side weapon to your axe")
+  ##elfabilities##
+  elfking = ("goldheart - you can turn anything into gold at will", "kingdom - your subjects have an undying loyalty to you", "battle IQ - you have a high battle IQ")
+  elflord = ("elkrider - you ride a massive elk into battle", "dual wielder - you have a small sword in addition to a bow", "enchantment - the elves of heaven blessed you with an enchantment")##enchantment##
+  elfswordsman = ("enchantment - the elves of heaven blessed you with an enchantment", "katars - you have katars in addition to a sword", "greatsword - your sword is bigger and wider than a regular sword")
+  elfarcher = ("enchantment - the elves of heaven blessed you with an enchantment", "infinite ammo - you never run out of arrows", "elemental arrows - you have water, fire, earth, and air arrows")
+  elfelemental = ("earthborn - you can move rocks using telekenises", "waterborn - you can breathe in water and move water using telekenises", "iceborn - you can turn water into ice, carve ice into any shape within seconds and move ice using telekenises")
+  elfwizard = ("forest arcane - you can talk to animals and heal living things", "water arcane - you can breathe in water and cast spells related to water", "ice arcane - you can cast spells related to ice")
+  elfveteran = ["wisdom - you mentor young elves", "mastery - you have mastered the sword, bow, and greatsword", "heavenly - you gain magical abilities: levetation, healing, and spellcasting"]
+  elfcrossbow = ("earthmarker - your crossbow shoots rocks and mud that temporarily blind enemies", "watersplasher - your crossbow shoots acid", "iceshards - your crossbow shoots sharp, poisonous ice shards that poison the enemy when it melts")
+  ##dwarfabilities##
+  dwarfhammerer = ("earthquake - slamming the ground with your hammer causes an earthquake", "molten - the head of your hammer is made of lava", "diamondhead - the head of your hammer is made of diamonds and can never break")
+  dwarfminer = ("mole - you can create underground tunnels in a matter of seconds", "geologist - you can forge weapons from any ores, inculding diamonds", "ore armor - you gain armor of a random ore")##armor##
+  dwarfsage = ("wisdom - you mentor young dwarves", "mastery - you have mastered the axe, hammer, and mace", "mines of the abyss - you gain magical abilities: you can control the Earth, you can magically make an ore appear, you can levitate")
+  dwarfmage = ("earth arcane - you can move rocks using telekenises", "lava arcane - you can transform the earth into lava and control it using telekenisis", "fire arcane - you can create and control fire using telekenises")
+  dwarfaxeman = ("fireblade - the head of your axe is engulfed in fire", "tornado - by spinning quickly, you can create a small tornado", "axe throw - you can throw your axe and it returns to you")
+  dwarfbarbarian = ("rage frenzy -  you have double strength for a short period of time", "goliath - you have a javeline, spear, and sword as your weapon", "earthquake - striking the ground allows you to cause a small earthquake")
+  dwarfmaceman = ("earthquake - striking the ground allows you to cause a small earthquake", "mace thrower - you can throw your mace and it returns to you", "ore armor - you gain armor of a random ore")##armor##
+  dwarflord = ("Ore Armor - You gain armor made of a random ore", "Double axe - You dual wield axes", "Fireblade - The head of your axe is englufed in fire")
+  ##angelabilities##
+  angeldivine = ("Divine Winds - You can blow a divine wind using your wings to make a friend of a foe", "Hyperspeed - You can fly twice as fast", "Lullaby - You can sing a soothing lullaby to heal your allies")
+  angelcupid = ("Arrows of Love - You can make your enemies fall in love with you", "Hyperspeed - You can fly twice as fast", "Heartbreak - You can cause a small heart attack to your enemies one at a time")
+  angelarcher = ("Shapeshifter - You can shapeshift into a deer", "Hyperspeed - you can fly twice as fast", "Divine Arrow - You have one arrow which you can control with your mind and it always returns to you")
+  angelsage = ("Battle of the Heavens - Your punch is backed up by the power of every human in heaven", "Heaven Ore - Your sword is enchanted", "Hyperspeed - You can fly twice as fast")##enchantment##
+  angelcorrupted = ("Fear - Your punch is backed up by the power of every human in hell", "Hellblade - Your blade kills anything it slashes within 24 hours unless healed by fruits of heaven", "Curses and Hexes - You can cast curses and hexes")
+  angelswordsman = ("Hyperspeed - You can fly twice as fast", "Heaven Ore - Your sword is enchanted", "Smite - You deal twice as much damage to enemies from the underworld")##enchantment##
+  angelsaint = ("Hyperspeed - You can fly twice as fast", "Shapeshifter - You can shapeshift into any bird", "Peace - You can make your enemies fall asleep for 5 minutes")
+  angelprotector = ("Diamond Bones - Your bones can't be broken", "Hyperspeed - You can fly twice as fast", "Gargoyle - You ward off all evil spirits and can remove curses and hexes")
+  ##reaperabilities##
+  reaperlifetaker = ("Hellblade - Your blade kills anything it slashes within 24 hours unless healed by fruits of heaven", "Fear - Your punch is backed up by the power of every human in hell", "Invisibility - You can be invisible for 1 hour per day")
+  reaperscythesman = ("Hellscythe - Your scythe kills anything it slashes within 24 hours unless healed by the fruits of heaven", "Scythe Throw - You can throw your scythe and it returns to you", "Lava Scythe - The blade of your scythe is covered in lava")
+  reapernightmare = ("Petrification - You can petrify your enemies", "Death Whistle - Your whistling weakens everybody around you", "Hellblade - Your balde kills anything it slashes withing 24 hours unless healed by fruits of heaven")
+  reaperhunter = ("Hellblade - Your blade kills anything it slashes within 24 hours unless healed by fruits of heaven", "Lava Blade - Your blade is covered in lava", "Enchantment - You gain an enchantment")##enchantment##
+  reaperarcher = ("Corrupt Arrow - You have one arrow which you can control with your ind and it always returns to you", "Hell Arrows - Your arrows kill anything they impale within 24 hours unless healed by fruits of heaven", "Infinite Ammo - You never run out of arrows")
+  reaperfamine = ("Metabolism - You can increase the metabolisms of everybody near you for 24 hours, causing them to starve", "Hellblade - Your blade kills anything it slashes within 24 hours unless healed by fruits of heaven", "Winter - You can curse winter conditions upon a town for up to 2 weeks")
+  grimreaper = ("Hellscythe - Your scythe kills anything it slashes within 24 hours unless healed by the fruits of heaven", "Collector - Your power increases with the amounts of souls you collect", "Shapeshifter - You can shapeshift into your enemies worst fear")
+  reapersoulguider = ("Hellblade - Your scythe kills anything it slashes within 24 hours unless healed by the fruits of heaven", "Soulguider - You guide souls in the underworld, and gain power with each one you guide", "Shapeshifter - You can shapeshift into any animal")
+  ##demigodabilities##
+  demigodgiant = ("Boulder Throw - You can throw giant boulders over great distances with stunning accuracy", "Earthquake - Striking the ground causes a small earthquake around you", "Weapon - You weild a giant axe")
+  demigodcyclops = ("Son of Poseidon - You can control water with telekinesis", "Earthquake - Striking the ground causes a small earthquake around you", "Prophecy - You can vaguely see into the future")
+  demigodswordsman = ("Mask - You can mask your sword as a small object", "Celestial Bronze - Your blade instantly kills anything evil stabbed by it", "Fireblade - The blade of your sword is engulfed in fire")
+  demigodarcher = ("Infinite Ammo - You never run out of arrows", "Apollo Accuracy - You never miss a clear shot", "Sniper - You have a range of 1 mile")
+  demigodaxewielder = ("Axe Throw - You can throw your axe and it returns to you", "Tornado - You can spin in a circle very fast, generating a small tornado", "Fireblade - The head of your axe is englufed in fire")
+  demigodmaceman = ("Fireblade - The head of your mace is engulfed in fire", "Lightning Strike - When you have enough energy stored, you can strike someone with lightning using your mace", "Earthquake - Striking the gorund casues a small earthquake around you")
+  demigodhunter = ("Invisibility - You can be invisible for a short period of time", "Dual-Wielder - You can wield a bow and a sword", "Camouflage - You can seamlessly camoflauge into your surroundings")
+  demigodtrident = ("Son of Poseidon - You can control water with telekinesis", "Trident Throw - You can throw your trident and it will return to you", "Riptide - You follow where your trident goes when it is raining")
+  ##dragonabilities##
+  dragonicebreather = ("Snowstorm - You can summon a snowstorm once a day", "Avalanche - You can summon an avalanche once a day", "Hailstorm - You shoot sharp ice projectiles from your mouth")
+  dragonfirebreather = ("Fire Tornado - You can create a small fire tornado", "Fire Resistance - You can't be harmed by fire", "Fire Punch - Your punch is flaming hot")
+  dragonaquatic = ("Hydro Blast - You shoot a high pressure beam of water from your mouth", "Scalding Hot - You shoot firey hot water from your mouth", "Waterslash - You shoot water at high speeds which slices your enemies")
+  dragonskyworm = ("Slash - You send a high speed gust of air that slashes your enemies", "Pressure Cooker - The longer you hold your attack, the more damage it does", "Tornado - You can summon a small tornado")
+  dragonearthblood = ("Burrow - You can burrow beneath the ground and attack your enemies from below", "Mud Splatter - You can temporarily blind your enemies by splashing mud in their face", "Earthmind - You can move rocks using telekenises")
+  dragonsolarin = ("Solar Pulse - You can shoot a sunbeam from your mouth", "Photosynthesis - Staying in the sunlight, you can regenerate health and hunger", "Sun Gaze - If anybody looks into your eyes, they get temporarily blinded")
+  dragonlunarian = ("Blood Moon - During a blood moon, you are twice as fast, strong, and resilient", "Moon Pulse - You shoot a moonbeam from your mouth", "Lunasynthesis - Staying in the moonlight, you can regenrate health and hunger")
+  dragonspaceroamer = ("Vaccum - You can suffocate your enemies by sucking the air out of their lungs using magic", "Supernova - You can use all your energy to create an explosion originating from you, but it takes a day to regenerate your energy", "Prophecy - You can vaguely see into the future")
+  ##titanabilities##
+  titancolossus = ("Pressure Bomb - You can emit a burst of energy to cause an explosion, but the severity of the explosion is parallel to how much time it takes to regenerate that energy", "Fog - You can emit fog and veil yourself", "Earthquake - You can slam the ground, causing a small earthquake to occur")
+  titanarmored = ("Ironskin - Your skin is made of iron", "Diamond Bones - Your bones can't be broken", "Earthquake - You can slam the ground, causing a small earthquake to occur")
+  titanvicious = ("Shark Teeth - You have teeth made of iron that regenerate", "Power Beam - You can shoot a small energy beam from your eyes", "Rabid - You move twice as fast and are twice as strong")
+  titanbrute = ("Earthquake - You can slam the ground, causing a small earthquake to occur", "Boulder Throw - You can throw giant boulders over great distances with stunning accuracy", "Brute Force - You have the triple strength, but half the speed of normal titans")
+  titandivine = ("Son of Uranus - You can control the wind", "Tornado - You can summon a small tornado", "Earthquake - You can slam the ground, causing a small earthquake to occur")
+  titancorrupt = ("Fear - Your punch is backed up by the power of every human in hell", "Earthquake - You can slam the ground, causing a small earthquake to occur", "Curses - You can cast curses")
+  titanclubwielder = ("Earthquake - You can slam the ground, causing a small earthquake to occur", "Club Throw - You can throw your club and it will return to you", "Iron Club - Your club is made of iron")
+  titantreasurehoarder = ("Earthquake - You can slam the ground, causing a small earthquake to occur", "Burrow - You canburrow beneath the ground and attack your enemies from below", "Goldheart - You can turn anything into gold at will")
+
+##occupation assigner##
+if randNum1==2:
+    print(species[randNum1])
+    print(elfOccupation[randNum2])
+elif randNum1 == 0:
+    print(species[randNum1])
+    print(orcOrcupation[randNum2])
+elif randNum1 == 1:
+    print(species[randNum1])
+    print(humanOccupation[randNum2])
+elif randNum1 == 3:
+    print(species[randNum1])
+    print(dwarfOccupation[randNum2])
+elif randNum1 == 4:
+    print(species[randNum1])
+    print(angelOccupation[randNum2])
+elif randNum1 == 5:
+    print(species[randNum1])
+    print(reaperOccupation[randNum2])
+elif randNum1 == 6:
+    print(species[randNum1])
+    print(demigodOccupation[randNum2])
+elif randNum1 == 7:
+    print(species[randNum1])
+    print(dragonOccupation[randNum2])
+elif randNum1 == 8:
+    print(species[randNum1])
+    print(titanOccupation[randNum2])
+
+##orcability##
+if randNum1 == 0 and randNum2 == 0:
+    print(orcminer[randNum3])
+elif randNum1 == 0 and randNum2 == 1:
+    print(orcalchemist[randNum3])
+elif randNum1 == 0 and randNum2 == 2:
+    print(orcaxewielder[randNum3])
+elif randNum1 == 0 and randNum2 == 3:
+    print(orcwarrior[randNum3])
+elif randNum1 == 0 and randNum2 == 4:
+    print(orcbowman[randNum3])
+elif randNum1 == 0 and randNum2 == 5:
+    print(orcmage[randNum3])
+elif randNum1 == 0 and randNum2 == 6:
+    print(orcbrute[randNum3])
+elif randNum1 == 0 and randNum2 ==7:
+    print(orccannonsman[randNum3])
+##humanability##
+if randNum1 == 1 and randNum2 == 0:
+    print(humangeneral[randNum3])
+if randNum1 == 1 and randNum2 == 1:
+    print(humanknight[randNum3])
+if randNum1 == 1 and randNum2 == 2:
+    print(humanassassin[randNum3])
+if randNum1 == 1 and randNum2 == 3:
+    print(humanfarmer[randNum3])
+if randNum1 == 1 and randNum2 == 4:
+    print(humangunner[randNum3])
+if randNum1 == 1 and randNum2 == 5:
+    print(humanemperor[randNum3])
+if randNum1 == 1 and randNum2 == 6:
+    print(humanmage[randNum3])
+if randNum1 == 1 and randNum2 == 7:
+    print(humanpirate[randNum3])
+if randNum1 == 1 and randNum2 == 8:
+    print(humanbehemoth[randNum3])
+##elfabilities##
+if randNum1 == 2 and randNum2 == 0:
+    print(elfking[randNum3])
+if randNum1 == 2 and randNum2 == 1:
+   print(elflord[randNum3])
+if randNum1 == 2 and randNum2 == 2:
+   print(elfswordsman[randNum3])
+if randNum1 == 2 and randNum2 == 3:
+   print(elfarcher[randNum3])
+if randNum1 == 2 and randNum2 == 4:
+   print(elfelemental[randNum3])
+if randNum1 == 2 and randNum2 == 5:
+   print(elfwizard[randNum3])
+if randNum1 == 2 and randNum2 == 6:
+   print(elfveteran[randNum3])
+if randNum1 == 2 and randNum2 == 7:
+   print(elfcrossbow[randNum3])
+##dwarfabilities##
+if randNum1 == 3 and randNum2 == 0:
+   print(dwarfhammerer[randNum3])
+if randNum1 == 3 and randNum2 == 1:
+   print(dwarfminer[randNum3])
+if randNum1 == 3 and randNum2 == 2:
+   print(dwarfsage[randNum3])
+if randNum1 == 3 and randNum2 == 3:
+   print(dwarfmage[randNum3])
+if randNum1 == 3 and randNum2 == 4:
+   print(dwarfaxeman[randNum3])
+if randNum1 == 3 and randNum2 == 5:
+   print(dwarfbarbarian[randNum3])
+if randNum1 == 3 and randNum2 == 6:
+   print(dwarfmaceman[randNum3])
+if randNum1 == 3 and randNum2 == 7:
+   print(dwarflord[randNum3])
+##angelabilities##
+if randNum1 == 4 and randNum2 == 0:
+   print(angeldivine[randNum3])
+if randNum1 == 4 and randNum2 == 1:
+   print(angelcupid[randNum3])
+if randNum1 == 4 and randNum2 == 2:
+   print(angelarcher[randNum3])
+if randNum1 == 4 and randNum2 == 3:
+   print(angelsage[randNum3])
+if randNum1 == 4 and randNum2 == 4:
+   print(angelcorrupted[randNum3])
+if randNum1 == 4 and randNum2 == 5:
+   print(angelswordsman[randNum3])
+if randNum1 == 4 and randNum2 == 6:
+   print(angelsaint[randNum3])
+if randNum1 == 4 and randNum2 == 7:
+   print(angelprotector[randNum3])
+##reaperabilities##
+if randNum1 == 5 and randNum2 == 0:
+   print(reaperlifetaker[randNum3])
+if randNum1 == 5 and randNum2 == 1:
+   print(reaperscythesman[randNum3])
+if randNum1 == 5 and randNum2 == 2:
+   print(reapernightmare[randNum3])
+if randNum1 == 5 and randNum2 == 3:
+   print(reaperhunter[randNum3])
+if randNum1 == 5 and randNum2 == 4:
+   print(reaperarcher[randNum3])
+if randNum1 == 5 and randNum2 == 5:
+   print(reaperfamine[randNum3])
+if randNum1 == 5 and randNum2 == 6:
+   print(grimreaper[randNum3])
+if randNum1 == 5 and randNum2 == 7:
+   print(reapersoulguider[randNum3])
+##demigodabilities##
+if randNum1 == 6 and randNum2 == 0:
+   print(demigodgiant[randNum3])
+if randNum1 == 6 and randNum2 == 1:
+   print(demigodcyclops[randNum3])
+if randNum1 == 6 and randNum2 == 2:
+   print(demigodswordsman[randNum3])
+if randNum1 == 6 and randNum2 == 3:
+   print(demigodarcher[randNum3])
+if randNum1 == 6 and randNum2 == 4:
+   print(demigodaxewielder[randNum3])
+if randNum1 == 6 and randNum2 == 5:
+   print(demigodmaceman[randNum3])
+if randNum1 == 6 and randNum2 == 6:
+   print(demigodhunter[randNum3])
+if randNum1 == 6 and randNum2 == 7:
+   print(demigodtrident[randNum3])
+##dragonabilities##
+if randNum1 == 7 and randNum2 == 0:
+   print(dragonicebreather[randNum3])
+if randNum1 == 7 and randNum2 == 1:
+   print(dragonfirebreather[randNum3])
+if randNum1 == 7 and randNum2 == 2:
+   print(dragonaquatic[randNum3])
+if randNum1 == 7 and randNum2 == 3:
+   print(dragonskyworm[randNum3])
+if randNum1 == 7 and randNum2 == 4:
+   print(dragonearthblood[randNum3])
+if randNum1 == 7 and randNum2 == 5:
+   print(dragonsolarin[randNum3])
+if randNum1 == 7 and randNum2 == 6:
+   print(dragonlunarian[randNum3])
+if randNum1 == 7 and randNum2 == 7:
+   print(dragonspaceroamer[randNum3])
+##titanabilities##
+if randNum1 == 8 and randNum2 == 0:
+   print(titancolossus[randNum3])
+if randNum1 == 8 and randNum2 == 1:
+   print(titanarmored[randNum3])
+if randNum1 == 8 and randNum2 == 2:
+   print(titanvicious[randNum3])
+if randNum1 == 8 and randNum2 == 4:
+   print(titanbrute[randNum3])
+if randNum1 == 8 and randNum2 == 5:
+   print(titandivine)
+if randNum1 == 8 and randNum2 == 6:
+   print(titancorrupt)
+if randNum1 == 8 and randNum2 == 7:
+   print(titanclubwielder[randNum3])
+if randNum1 == 8 and randNum2 == 8:
+   print(titantreasurehoarder[randNum3])
+   ##power##
+  power = ("Strength - Human", "Strength - Above Average", "Strength - Warrior", "Strength - Gorilla", "Strength - Champion", "Strength - Ethereal", "Strength - Transcendent", "Strength - Chuck Norris")
+  weights = (0.3, 0.25, 0.2, 0.1, 0.07, 0.04, 0.03, 0.01)
+  strength = random.choices(power, weights)
+  print(strength)
+  ##height##
+if randNum1 == 0:
+   tallness = ("4.5ft", "4ft", "5ft", "5.5ft")
+   weights2 = (0.25, 0.25, 0.25, 0.25)
+   heights = random.choices(tallness, weights2)
+   print(heights)
+if randNum1 == 1:
+   tallness2 = ("5.5ft", "6ft", "6'5ft", "6'9ft")
+   weights3 = (0.25, 0.25, 0.25, 0.25)
+   heights2 = random.choices(tallness2, weights3)
+   print(heights2)
+if randNum1 == 2:
+   tallness3 = ("6ft", "6'5ft", "6'9ft", "7ft")
+   weights4 = (0.25, 0.25, 0.25, 0.25)
+   heights3 = random.choices(tallness3, weights4)
+   print(heights3)
+if randNum1 == 3:
+   tallness4 = ("4ft", "4.5ft", "5ft", "5.5ft")
+   weights5 = (0.25, 0.25, 0.25, 0.25)
+   height4 = random.choices(tallness4, weights5)
+   print(height4)
+if randNum1 == 4:
+   tallness5 = ("6ft", "6'4ft", "6'7ft", "6'9ft")
+   weights6 = (0.25, 0.25, 0.25, 0.25)
+   heights5 = random.choices(tallness5, weights6)
+   print(heights5)
+if randNum1 == 5:
+   tallness6 = ("6'7ft", "6'9ft", "7'1ft", "7'3ft")
+   weights7 = (0.25, 0.25, 0.25, 0.25)
+   heights6 = random.choices(tallness6, weights7)
+   print(heights6)
+if randNum1 == 6:
+   tallness7 = ("6'5ft", "6'7ft", "6'9ft", "7ft")
+   weights8 = (0.25, 0.25, 0.25, 0.25)
+   heights7 = random.choices(tallness7, weights8)
+   print(heights7)
+if randNum1 == 7:
+   tallness8 = ("7'3ft", "7'5ft", "7'7ft", "7'9ft")
+   weights9 = (0.25, 0.25, 0.25, 0.25)
+   heights8 = random.choices(tallness8, weights9)
+   print(heights8)
+if randNum1 == 8:
+   tallness9 = ("8'5ft", "9ft", "9'5ft", "10ft")
+   weights10 = (0.25, 0.25, 0.25, 0.25)
+   heights9 = random.choices(tallness9, weights10)
+   print(heights9)
+##enchantments##
+   enchantments = ("Fire Aspect - You set fire to enemies you hit with your weapon", "Power - Your weapon increases in power with how many enemies have been defeated with it", "Ice Blood - Enemies you hit will freeze in the spot on their body that you hit them")
+   weights21 = (0.33, 0.33, 0.34)
+   enchantment = random.choices(enchantments, weights21)
+if randNum1 == 1 and randNum2 == 2:
+   print(enchantment)
+if randNum1 == 2 and randNum2 == 2:
+   print(enchantment)
+if randNum1 == 4 and randNum2 == 4:
+   print(enchantment)
+if randNum1 == 4 and randNum2 == 6:
+   print(enchantment)
+if randNum1 == 5 and randNum2 == 4:
+   print(enchantment)
